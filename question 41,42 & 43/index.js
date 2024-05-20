@@ -1,5 +1,6 @@
+"use strict";
 // Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
-var magician = ["John", "Charley", "Youmbra", "Kaliya", "Junaid Bangali", "Rustam Bengali"];
+let magician = ["John", "Charley", "Youmbra", "Kaliya", "Junaid Bangali", "Rustam Bengali"];
 // function show_magicians(array:string[]){
 //     for(let i=0;i<=4;i++){console.log(array[i])}
 // }
@@ -23,22 +24,22 @@ var magician = ["John", "Charley", "Youmbra", "Kaliya", "Junaid Bangali", "Rusta
 //   show_magicians(magician)
 //Q:43 Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name
 function make_album(artistname, albumtitle, tracks) {
-    var album = { name: artistname, Albumtitle: albumtitle,
+    let album = { name: artistname, Albumtitle: albumtitle,
     };
     if (tracks !== undefined) {
         album.tracks = tracks;
     }
     return album;
 }
-var album1 = make_album("Anas Maududi", "The world is love!!");
-var album2 = make_album("Baba", "Baby so toddler");
-var album3 = make_album("Mama", "Relatives Matter");
-var album4 = make_album("Mama", "Relatives Matter", 34);
+let album1 = make_album("Anas Maududi", "The world is love!!");
+let album2 = make_album("Baba", "Baby so toddler");
+let album3 = make_album("Mama", "Relatives Matter");
+let album4 = make_album("Mama", "Relatives Matter", 34);
 console.log(album1);
 console.log(album2);
-var copyarray = [magician];
+let copyarray = [magician];
 function make_great(array) {
-    console.log("copy array= ".concat(array));
+    console.log(`copy array= ${array}`);
 }
 // make_great(magician)
 // console.log(magician)
@@ -48,7 +49,7 @@ function show_magician(copyarrray, magiciian) {
         console.log(copyarray);
     }
     else if (copyarrray == magician) {
-        magician = magician.map(function (magicia) { return "".concat(magicia, "The Great"); });
+        magician = magician.map(magicia => `${magicia}The Great`);
         console.log(magician);
     }
 }

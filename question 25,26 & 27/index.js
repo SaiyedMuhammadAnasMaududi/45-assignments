@@ -1,10 +1,11 @@
+"use strict";
 // // //  Q25 :
 // Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 // • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
-var alien_color = "Green";
+let alien_color = "Green";
 if (alien_color === "Green") {
-    console.log("Congratulations!!!!!! You have earned five points");
+    console.log(`Congratulations!!!!!! You have earned five points`);
 }
 if (alien_color !== "Green") {
     console.log("");
@@ -32,7 +33,14 @@ else {
 //  • If the alien is yellow, print a message that the player earned 10 points.
 //  • If the alien is red, print a message that the player earned 15 points.
 //  • Write three versions of this program, making sure each message is printed for the appropriate color alien.
-console.log("  Q 27 : Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.\n  \u2022 If the alien is green, print a message that the player earned 5 points.\n \n  \u2022 If the alien is yellow, print a message that the player earned 10 points.\n \n  \u2022 If the alien is red, print a message that the player earned 15 points.\n \n  \u2022 Write three versions of this program, making sure each message is printed for the appropriate color alien.");
+console.log(`  Q 27 : Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+  • If the alien is green, print a message that the player earned 5 points.
+ 
+  • If the alien is yellow, print a message that the player earned 10 points.
+ 
+  • If the alien is red, print a message that the player earned 15 points.
+ 
+  • Write three versions of this program, making sure each message is printed for the appropriate color alien.`);
 alien_color = "Red";
 if (alien_color === "Green") {
     console.log("Congratulations!!!!!!! You have earned 5 points");
